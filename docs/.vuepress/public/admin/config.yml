@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: p440davis/VuePress-with-Netlify-CMS
+  repo: ub3rb3457/gray-matter-digital
 media_folder: "docs/.vuepress/public/media"
 public_folder: "/media"
 publish_mode: editorial_workflow
