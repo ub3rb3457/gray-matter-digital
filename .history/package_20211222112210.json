@@ -2,7 +2,7 @@
   "name": "Gray Matter Digital",
   "version": "1.0.0",
   "author": "ub3rb3457",
-  "type": "module",
+  "type": ""
   "scripts": {
     "dev": "vuepress dev . --open --host \"localhost\"",
     "build": "vuepress build ."
