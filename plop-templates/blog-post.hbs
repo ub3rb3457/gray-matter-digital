@@ -1,0 +1,22 @@
+---
+
+title: {{titleCase title}} # from title prompt
+
+date: {{ISOStringDate}} # from plopHelper
+
+template: “post”
+
+draft: true
+
+slug: {{shortDate}}-{{dashCase title}} # from plop helper and title prompt
+
+categories:
+
+- {{category}} # from category prompt
+
+description: {{description}} # from description prompt
+
+---
+## Intro
+{{description}}
+<!— The blog post starts here —>

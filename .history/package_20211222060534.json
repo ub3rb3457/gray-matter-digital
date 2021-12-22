@@ -1,0 +1,14 @@
+{
+  "name": "Gray Matter Digital",
+  "version": "1.0.0",
+  "author": "ub",
+  "scripts": {
+    "dev": "vuepress dev . --open --host \"localhost\"",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "1.8.2",
+    "vuepress-theme-reco": "1.6.10"
+  },
+  "description": "cataloguing my endeavors in creativity"
+}
