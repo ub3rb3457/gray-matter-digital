@@ -5,7 +5,7 @@ function dirName(string){
   var sub1 = string.replace('-','/')
   return sub1.replace('-','')
 } 
-module.exports = function (plop) {
+export default function (plop) {
     const today = new Date(Date.now())
     const shortDate = today.toISOString().split("T")[0]
     const file_path = dirName(shortDate)
