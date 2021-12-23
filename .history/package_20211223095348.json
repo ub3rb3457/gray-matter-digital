@@ -13,7 +13,7 @@
   },
   "description": "cataloguing my endeavors in creativity",
   "dependencies": {
-    "inquirer-date-prompt": "^2.0.1",
-    "netlify-cms-app": "^2.15.62"
+    "netlify-cms-app": "^2.15.62",
+    "inquirer-date-prompt": "^2.0.0",
   }
 }

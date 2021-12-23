@@ -25,6 +25,7 @@ module.exports = function (plop) {
     plop.setHelper("shortDate", () => shortDate)
     plop.setHelper("file_path", () => file_path)
     plop.setHelper("ISOStringDate", () => today.toISOString())
+    var datePrompt = 
     plop.setPrompt('date', require('inquirer-date-prompt'))
     // optional welcome message
 

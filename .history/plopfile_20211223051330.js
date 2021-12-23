@@ -1,16 +1,4 @@
-var fs = require('fs');
 
-function loadCategories(){
-  var dirPath = 'blogs/';
-  var result = []; //this is going to contain paths
-
-  fs.readdir(__dirname + dirPath, function (err, filesPath) {
-      if (err) throw err;
-      result = filesPath.map(function (filePath) {
-          return dirPath + filePath;
-      });
-  });
-}
 function replaceAll(string, search, replace) {
   return string.split(search).join(replace);
 }
@@ -22,10 +10,9 @@ module.exports = function (plop) {
     const today = new Date(Date.now())
     const shortDate = today.toISOString().split("T")[0]
     const file_path = dirName(shortDate)
-    plop.setHelper("shortDate", () => shortDate)
+    plop.setHelper("shortDate", () => shortDate),
     plop.setHelper("file_path", () => file_path)
-    plop.setHelper("ISOStringDate", () => today.toISOString())
-    plop.setPrompt('date', require('inquirer-date-prompt'))
+    plop.setHelper("ISOStringDate", () => today.toISOString()),
     // optional welcome message
 
     plop.setWelcomeMessage(
@@ -34,11 +21,6 @@ module.exports = function (plop) {
     plop.setGenerator("wiki topic",{
       description: "Generate a wiki topic",
       prompts: [
-        {
-          type: "date",
-          name: "datetime",
-          message: "Publish date"  
-        },
         {
           type: "input",
           name: "title",
