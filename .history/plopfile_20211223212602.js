@@ -16,11 +16,11 @@ function replaceAll(string, search, replace) {
   return string.split(search).join(replace);
 }
 function formatDate(date) {
-  return new Date(date).toISOString().split('T')[0]
+  return new Date()
+yourDate.toISOString().split('T')[0]
 } 
 module.exports = function (plop) {
     const today = new Date(Date.now())
-    plop.setHelper("formatDate", (date) => formatDate(date))
     plop.setHelper("filename", function(date){
       return date.replace('-','/').replace('-','')
     })

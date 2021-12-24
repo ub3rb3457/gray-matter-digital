@@ -20,7 +20,6 @@ function formatDate(date) {
 } 
 module.exports = function (plop) {
     const today = new Date(Date.now())
-    plop.setHelper("formatDate", (date) => formatDate(date))
     plop.setHelper("filename", function(date){
       return date.replace('-','/').replace('-','')
     })
