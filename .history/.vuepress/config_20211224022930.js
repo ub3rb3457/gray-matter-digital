@@ -3,13 +3,13 @@ module.exports = {
   "description": "Catalogging my endeavors in creativity",
   plugins: [
     [
-      ['vuepress-plugin-auto-sidebar'],
+      'vuepress-plugin-auto-sidebar',
       [
         "md-enhance",
         {
           // your options
         }
-      ],
+        ],
     ]
   ],
   "dest": "public",

@@ -8,12 +8,15 @@
     "build": "vuepress build ."
   },
   "devDependencies": {
-    "vuepress": "1.8.2",
-    "vuepress-theme-reco": "1.6.10"
+    "vuepress": "^0.14.11",
+    "vuepress-plugin-handle-sidebar": "^1.0.3",
+    "vuepress-theme-reco": "^1.4.2"
   },
   "description": "cataloguing my endeavors in creativity",
   "dependencies": {
     "inquirer-date-prompt": "^2.0.1",
-    "netlify-cms-app": "^2.15.62"
+    "netlify-cms-app": "^2.15.62",
+    "vuepress-plugin-internal-link": "^0.2.0",
+    "vuepress-plugin-md-enhance": "^1.22.0"
   }
 }

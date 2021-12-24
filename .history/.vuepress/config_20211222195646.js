@@ -1,17 +1,6 @@
 module.exports = {
   "title": "Gray Matter Digital",
   "description": "Catalogging my endeavors in creativity",
-  plugins: [
-    [
-      ['vuepress-plugin-auto-sidebar'],
-      [
-        "md-enhance",
-        {
-          // your options
-        }
-      ],
-    ]
-  ],
   "dest": "public",
   "head": [
     [
