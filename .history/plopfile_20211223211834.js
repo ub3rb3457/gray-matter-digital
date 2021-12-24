@@ -89,7 +89,7 @@ module.exports = function (plop) {
       actions: [
         {
           type: "add",
-          path: `blogs/{{dashCase category}}/{{formatDate datetime}}-{{dashCase title}}.md`,
+          path: `blogs/{{dashCase category}}/{{formatDate(datetime}}-{{dashCase title}}.md`,
           templateFile: "plop-templates/blog-post.hbs",
         },
       ],
