@@ -1,4 +1,4 @@
-/* var fs = require('fs');
+var fs = require('fs');
 
 function loadCategories(){
   var dirPath = 'blogs/';
@@ -11,7 +11,7 @@ function loadCategories(){
           return dirPath + filePath;
       });
   });
-} */
+}
 function replaceAll(string, search, replace) {
   return string.split(search).join(replace);
 }

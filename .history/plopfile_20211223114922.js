@@ -1,4 +1,4 @@
-/* var fs = require('fs');
+var fs = require('fs');
 
 function loadCategories(){
   var dirPath = 'blogs/';
@@ -11,7 +11,7 @@ function loadCategories(){
           return dirPath + filePath;
       });
   });
-} */
+}
 function replaceAll(string, search, replace) {
   return string.split(search).join(replace);
 }
@@ -51,7 +51,7 @@ module.exports = function (plop) {
           type: "date",
           name: "datetime",
           message: "Publish date",
-          format: { hour: undefined, minute: undefined }  
+          format: { year: "yyyy-MM-dd", hour: undefined, minute: undefined }  
         },
         {
           type: "input",

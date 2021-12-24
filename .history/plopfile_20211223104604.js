@@ -1,4 +1,4 @@
-/* var fs = require('fs');
+var fs = require('fs');
 
 function loadCategories(){
   var dirPath = 'blogs/';
@@ -11,16 +11,18 @@ function loadCategories(){
           return dirPath + filePath;
       });
   });
-} */
+}
 function replaceAll(string, search, replace) {
   return string.split(search).join(replace);
 }
- 
+function dirName(string){
+  var sub1 = string.replace('-','/')
+  return sub1.replace('-','')
+} 
 module.exports = function (plop) {
     const today = new Date(Date.now())
-    plop.setHelper("filename", function(date){
-      return date.replace('-','/').replace('-','')
-    })
+    const file_path = dirName(shortDate)
+    plop.setHelper("file_path", () => file_path)
     plop.setPrompt('date', require('inquirer-date-prompt'))
     // optional welcome message
 
@@ -77,7 +79,7 @@ module.exports = function (plop) {
       actions: [
         {
           type: "add",
-          path: `blogs/{{dashCase category}}/{{datetime}}-{{dashCase title}}.md`,
+          path: `blogs/{{dashCase category}}/${file_path}-{{dashCase title}}.md`,
           templateFile: "plop-templates/blog-post.hbs",
         },
       ],
