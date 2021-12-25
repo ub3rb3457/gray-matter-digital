@@ -16,7 +16,7 @@ function replaceAll(string, search, replace) {
   return string.split(search).join(replace);
 }
 function formatDate(date) {
-  return replaceAll(new Date(date).toISOString().split('T')[0],",","/")
+  return replaceAll(new Date(date).toISOString().split('T')[0])
 } 
 module.exports = function (plop) {
     const today = new Date(Date.now())
@@ -80,7 +80,7 @@ module.exports = function (plop) {
       actions: [
         {
           type: "add",
-          path: `blogs/{{dashCase category}}/{{formatDate datetime}}/{{dashCase title}}.md`,
+          path: `blogs/{{dashCase category}}/{{formatDate datetime}}-{{dashCase title}}.md`,
           templateFile: "plop-templates/blog-post.hbs",
         },
       ],
